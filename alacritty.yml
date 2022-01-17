@@ -1,0 +1,72 @@
+env:
+  # TERM variable
+  #
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  TERM: xterm-256color
+  
+window:
+  # neither borders nor title bar
+  decorations: none
+
+# Font configuration (changes require restart)
+font:
+  # The size to use.
+  size: 12
+  # The normal (roman) font face to use.
+  normal:
+    family: Source Code Pro
+    # Style can be specified to pick a specific face.
+    #style: Regular
+
+  # The bold font face
+  bold:
+    family:  Source Code Pro
+   # Style can be specified to pick a specific face.
+    # style: Bold
+
+  # The italic font face
+  italic:
+    family:  Source Code Pro
+   # Style can be specified to pick a specific face.
+    # style: Italic
+# 輸入中文的bug
+#key_bindings:
+    #- { key: Back, action:  ReceiveChar}
+
+    #window.opacity: 0.60
+
+
+# Colors (Monokai Dark)
+colors:
+  # Default colors
+  primary:
+    background: '#282a36'
+    foreground: '#D3D7CF'
+
+  # Normal colors
+  normal:
+   black:   '#080808'
+   red:     '#ff0000'
+   green:   '#87ffaf'
+   yellow:  '#ffaf00'
+   blue:    '#00afff'
+   magenta: '#ff00af'
+   cyan:    '#8be9fd'
+   white:   '#dadada'
+
+  # Bright colors
+  bright:
+   black:   '#080808'
+   red:     '#ff0000'
+   green:   '#87ffaf'
+   yellow:  '#ffaf00'
+   blue:    '#00afff'
+   magenta: '#ff00af'
+   cyan:    '#8be9fd'
+   white:   '#dadada'
+
+shell:
+  program: /bin/bash
