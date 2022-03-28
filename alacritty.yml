@@ -36,7 +36,8 @@ font:
 #key_bindings:
     #- { key: Back, action:  ReceiveChar}
 
-    #window.opacity: 0.60
+    window.opacity: 0.60
+    background_opacity: 0.60
 
 
 # Colors (Monokai Dark)
